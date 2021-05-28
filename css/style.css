@@ -1,0 +1,274 @@
+@import url('reset.css');
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+#wrap { width: 100%; }
+#header_wrap { width: 100%; }
+#banner { width: 100%; }
+#banner_m { display: none; }
+#contents_wrap_1 { width: 100%;  padding-top: 150px;  }
+#contents_wrap_2 { width: 100%;   }
+
+#footer_wrap { width: 100%; border-top: 1px solid #999; margin-top: 100px; }
+
+#header { position: relative; width: 1200px; margin: 0 auto; z-index: 9999;}
+#header h1 {float: left; width: 20%; padding-top : 50px;}
+#header h1 img { max-width: 100%; height: auto; }
+
+nav {float: left; width: 80%;  }
+nav ul.gnb { float: right;  margin-top: 101px;}
+nav ul.gnb > li { position: relative; float: left; }
+nav ul.gnb > li > a { font-size: 20px; color: #777; padding: 10px 35px; display: block;}
+nav ul.gnb > li:hover > a { background: #fff; }
+
+
+nav ul.sub { position: absolute; top: 49px; left: 0;  width: 100%; display: none;}
+nav ul.sub li { background: #fff;  text-align: center; }
+nav ul.sub li a { padding: 10px 0; display: block;  }
+nav ul.sub li a:hover { background: rgb(246, 251, 173);  }
+
+.nav_bg { width: 100%; height: 200px; background: #fff; 
+            position: absolute; top: 149px; left: 0; display: none; }
+
+a#pull { display: none;  }
+
+
+
+
+.top_menu { position: absolute; top: 10px; right: 0;  }
+.top_menu li { float: left;  }
+.top_menu li.line{ color: #999;  }
+.top_menu li a { font-size: 14px; padding: 0 20px;  color: #999;}
+.top_menu li a:hover { color: #000;  }
+
+@media (max-width: 1220px){
+    #header { width: 100%;  }
+    nav ul.gnb > li { width: 20%; }
+    nav ul.gnb > li > a { font-size: 18px; color: #777; padding: 10px 20px; display: block;}
+
+    nav ul.sub { top: 49px; }
+
+    #contents_wrap_1 {padding-top: 100px;  }
+
+
+}
+
+@media (max-width: 768px){
+    
+    #header h1 { width: 98%; padding : 10px 0 20px 2%;}
+    #header h1 img { width: 150px }
+
+    .nav_bg { top: 125px; }
+    nav { width: 100%;  }
+    nav ul.gnb { width: 100%; margin-top: 0; }
+    nav ul.gnb > li { text-align: center;  }
+    nav ul.gnb > li > a { font-size: 18px; padding: 10px 0;  }
+
+    nav ul.sub { top: 46px; }
+}
+
+@media (max-width: 480px){
+
+    #header h1{ width: 98%; padding : 5px 0 10px 2%;}
+    #header h1 img { width: 120px;  }
+
+
+    #banner_m { display: block;  }
+    #banner_m img{ max-width: 100%; height: auto;   }
+    #banner { display: none;  }
+    .top_menu { display: none;  }
+    nav ul.gnb { display: none;  }
+    a#pull { display: block;   position: absolute; top: 10px; right: 20px; font-size: 1.7rem;} 
+    nav ul.sub li { display: none; }
+    nav ul.gnb > li { width: 100%;  }
+
+}
+
+
+
+
+#contents_1 { width: 1200px; margin: 0 auto; }
+#contents_2 { width: 1200px; margin: 0 auto; }
+
+.b_text { width: 100%; text-align: center; font-size: 3rem; color: rgb(44, 116, 35); 
+        font-family: 'GmarketSansBold'; margin-bottom: 30px;}
+.s_text { width: 100%; text-align: center; font-size: 1.4rem; margin-bottom: 70px;}
+
+/* 공화춘 */
+.text_box_1 { float: left;  width: 50%;  padding: 50px 0 0 0; }
+.img_box_1 { float: left;  width: 50%; }
+.img_box_1 img { max-width: 100%; height: auto; }
+
+/* 박물관시설현황 */
+.text_box_2 { float: left;  width: 50%; padding: 50px 0 0 0;  }
+.img_box_2 { float: left;  width: 50%; }
+.img_box_2 img { max-width: 100%; height: auto; }
+
+.img_box_2_1 { display: none; }
+
+/* 글씨크기 */
+.text_b { font-size: 32px; color: #555; font-family: 'GmarketSansBold'; 
+        text-align: center; padding-bottom: 50px; }
+
+.text_s { font-size: 18px; color: #777; 
+        text-align: center; }
+
+.text_b_1 { font-size: 32px; color: #555; font-family: 'GmarketSansBold'; 
+        text-align: left; padding: 0 0 50px 70px; }
+
+.text_s_1 { font-size: 18px; color: #777;  
+        text-align: left; padding-left: 30px; }
+    
+
+/* 자세히보기 */
+/* .btn_1 {  padding: 20px 120px 0 0;  text-align: right;}
+.btn_1 a { background: #777; padding: 5px 20px; color: #fff; }
+.btn_1 a:hover { background: #000; color: #fff; }
+
+.btn_2 {  padding: 20px 80px 0 0;  text-align: right;}
+.btn_2 a { background: #777; padding: 5px 20px; color: #fff; }
+.btn_2 a:hover { background: #000; color: #fff; } */
+
+
+/* 아이콘박스 */
+.icon {  width: 100%;  text-align: center; }
+.icon_box_1 {float : left; width : 20%; height: 120px;  
+    text-align: center; border-right: 1px solid #ccc;}
+.icon_box_1_1 {float : left; width :19%; height: 120px;
+    text-align: center; }
+.icon_01 {font-size: 4rem; color: #999;}
+.icon_01:hover { color: #000;}
+.icon_text {text-align: center; font-size: 20px; padding-top: 20px; }
+.icon_text a {color:#999;}
+.icon_text a:hover {color:#000;}
+
+/* 주변둘러보기 */
+
+
+.img_box_3{float : left;  width: 20%; ; }
+.img_box_3 img{max-width: 100%; height: auto;}
+.img_box_3_none {float : left;  width: 20%; ; }
+.img_box_3_none img{max-width: 100%; height: auto;}
+
+
+.img_text_1{text-align : center;}
+.img_text_1 a{color:#555;}
+.img_text_1 a:hover{color:#000;}
+
+@media (max-width: 1220px){
+    #contents_1 { width: 100%; }
+    #contents_2 { width: 100%; }
+
+    /* 공화춘 */
+    .text_box_1 {  width: 50%;  padding: 50px 0 0 0; }
+    .img_box_1 {  width: 50%; }
+    .img_box_1 img { max-width: 100%; height: auto; }
+
+    /* 박물관시설현황 */
+    .text_box_2 { width: 50%; padding: 50px 0 0 0;  }
+    .img_box_2 { width: 50%; }
+    .img_box_2 img { max-width: 100%; height: auto; }
+
+    /* 글씨크기 */
+    .text_b { font-size: 28px; color: #555; font-family: 'GmarketSansBold'; 
+            text-align: center; padding-bottom: 30px; }
+
+    .text_s { font-size: 16px; color: #777; 
+            text-align: center; padding-bottom: 50px; }
+
+    .text_b_1 { font-size: 28px; color: #555; font-family: 'GmarketSansBold'; 
+            text-align: left; padding: 0 0 30px 70px; }
+
+    .text_s_1 { font-size: 16px; color: #777;  
+            text-align: left; padding-left: 30px; }
+
+
+}
+
+
+
+@media (max-width: 768px){
+
+    #contents_wrap_1 {padding-top: 80px;  }
+    #contents_wrap_2 {padding-top: 50px;  }
+
+        /* 공화춘 */
+        .text_box_1 {  width: 100%; padding: 0 0 0 0; text-align: center; text-align: center;}
+        .img_box_1 {  width: 100%; text-align: center; }
+        .img_box_1 img { max-width: 100%; height: auto; }
+    
+        /* 박물관시설현황 */
+        .text_box_2 { width: 100%; padding: 0 0 0 0;  text-align: center;}
+        .img_box_2 { display: none; }
+        .img_box_2_1 { display: block; text-align: center;}
+        .img_box_2_1 img { max-width: 100%; height: auto; }
+
+
+        .text_b {text-align: center; padding-bottom: 30px; }
+        .text_s { text-align: center; padding-bottom: 50px; }
+
+        .text_b_1 { text-align: center; padding: 0 0 30px 0; }
+        .text_s_1 {  text-align: left; padding: 0  0 50px 240px; }
+
+        /* 아이콘 */
+        .icon_box_1 { height: 110px;}
+        .icon_box_1_1 { height: 100px;  }
+        .icon_01 {font-size: 2rem; padding-top: 20px;}
+
+        .icon_text {text-align: center; font-size: 18px; padding-top: 20px; }
+
+        .b_text { font-size: 30px;   }
+
+
+        .img_box_3 { width: 50%; padding-bottom: 30px;}
+        .img_box_3_none { display: none; }
+}
+
+
+
+@media (max-width: 480px){
+
+    .text_b_1 { text-align: center; padding: 0 0 30px 0; }
+    .text_s_1 {  text-align: left; padding: 0  0 50px 100px; }
+
+    .img_box_3 { width: 100%; text-align: center; padding-bottom: 30px; }
+
+}
+
+
+
+#footer { width: 1200px; height: 250px;  margin: 0 auto; }
+
+.f_logo { float : left; padding : 40px 50px 0 0 ;  }
+
+.f_text{ float : left;  font-size: 14px;  color: #888; padding-top : 50px; }
+
+.f_sns{ float : right; padding-top : 45px;}
+.f_sns { float: right; padding: 45px 0 0 0; }
+.f_sns li { float: left;  }
+
+.f_sns li i { font-size: 3rem; color: #ccc;  padding: 0 10px;}
+.f_sns li:hover i{ color: #000;  }
+
+@media (max-width: 1220px){
+    #footer { width: 100%; }
+}
+
+@media (max-width: 768px){
+    .f_logo { padding: 50px 20px 0 0;  }
+    .f_text { padding: 60px 0 0 0; }
+    .f_sns { padding: 58px 0 0 0; }
+}
+
+@media (max-width: 480px){
+    .f_logo { padding: 50px 10px 0 0;  }
+    .f_logo img{ }
+    .f_text { font-size: 12px;  }
+    .f_sns { float: right; padding: 45px 0 0 0; }
+    .f_sns li i { font-size: 2rem; color: #ccc;  padding: 0 3px;}
+}
